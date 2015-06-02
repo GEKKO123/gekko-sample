@@ -1,2 +1,0 @@
-# gekko-sample
-ホームページ
