@@ -6,8 +6,158 @@
 	<body>
 	
 	<div>
-		月光です　勉強中<br />
-		将棋大好きです
+		<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Server Top</title>
+    <link rel="stylesheet" href="/default.css" type="text/css" />
+    <script src="/lib/jquery-2.0.3.min.js"></script>
+    <script src="/lib/socket.io.js"></script>
+    <script src="/mylib/CommonJs.js"></script>
+    <script src="/mylib/NodeClient.js"></script>
+    <script src="/mylib/am/AutoEvent.js"></script>
+    <script src="/ClientApp.js"></script>
+  </head>
+  <body>
+    <div>
+	<h1>★英語！！時制（選択肢問題）を解くテクニック！★</h1>
+	<p>センター試験や大学入試或いは、英語の問題集で必ずと言っても良いほどよくでる時制の問題！！<br/>
+	時制の問題を解けるようになると、助動詞、仮定法、受動態、能動態の問題も解きやすくなります！<br/>
+	難しいところや面倒くさいところは省いていきます！<br/>
+	</p></div>
+	<div><h2>テクニックは2つだけ！</h2>
+	①　副詞と動詞をチェック（時制の問題は副詞⇒動詞の順番で注目してみると大概解けます！）<br/>
+	②　英文を訳したときに、不自然ではないかをチェック（基本的なことですが、案外役に立ちます！）<br/>
+	③　○○完了形や○○完了進行形の問題があるが、動作動詞が○○完了形で！状態動詞が○○完了進行形！（詳しくは後で解説します！）
+	</div>
+　　　<br/>
+	<div>まずは、時制の選択肢問題で！<br></div>
+	 例題！！Ｎｏｗａｄａｙｓ　ｈｉｓ　ｆａｔｈｅｒ　（　　　）ｔｏ　ｗｏｒｋ　ｂｙ　ｃａｒ．（摂南大）<br/>
+　　　　　<p><input type="button" value="①．　ｈａｓ　ｇｏｎｅ　" onclick="alert('残念　have　doneは過去時制です')">
+      <button type="button" onclick="alert('残念　wentは過去です')">②．　ｗｅｎｔ</button>
+	  <button type="button" onclick="alert('残念　be going toは近い将来のことです')">③．　ｉｓ　ｇｏｉｎｇ</button>
+	  <button type="button" onclick="alert('正解！！　現在の時制のためgoesが正解')">④．　ｇｏｅｓ</button></p>
+	  <br/>
+	  <br/>
+     〔ヒント〕<br/>
+     1)副詞（Nowaday）をチェックしましょう。Nowaday（近ごろ、今日では、最近は）、現在の習慣や事実を述べる副詞です。<br/>
+	 2）動詞の時制を見てみましょう!①過去②過去③未来④現在です。<br/>
+	 <br/>
+	 <br/>
+	 <br/>
+	</div>
+    <div>
+         <select name="select">
+         <option value="1">（大）過去時制の説明</option>
+         <option value="2" selected="selected">現在時制の説明</option>
+         <option value="3" selected="selected">未来時制の説明</option></select><br/>
+         <br/>
+    </div>
+
+   <h4>時制の一覧です今回はすべては解説できませんが、この表が受験などの役に立てば幸いです！！</h4>
+   
+   <img src="英語　時制.png"　width="300px" height="400px">
+   
+	<p>時制には、先に述べた通り4つの項目があります。そしてその中に6つに派生します。<br/>
+	1　大過去から過去のある時点までを表すのが、『過去完了形』と『過去完了進行形』<br/>
+	2　過去から現在のことを表すのが、『現在完了形』と『現在完了進行形』<br/>
+	6　未来のある時期にする予定を表すのが『未来完了形』と『未来完了進行形』<br/>
+	</p>
+　　<div>1　大過去から過去のある時点までを表すのが、『過去完了形』と『過去完了進行形』です。<br/>
+   言葉だけではイメージができないと思うので、以下の図をみてください。<br/>
+   <br/>
+   </div>
+   
+  <img src="大過去.jpg"　width="300px" height="400px"><br/>
+  　                 過去完了形と過去完了進行形はどちらも同じ訳になります。<br/>
+   <br/>
+   ポイントはたたひとつだけ！<br/>
+   状態動詞か動作動詞の違いをチェック！<br/>  
+   
+　　『過去完了形』には（状態動詞）。<br/>
+　　『過去完了進行形』には（動作動詞）<br/>
+　　<br/>
+<div>まずは、時制の選択肢の入試問題で！<br></div>
+	 問1　We (____) for nearly thirty minutes when the train arrived.　　　(獨協大)<br/>
+　　　　　<p><input type="button" value="1. had been waiting" onclick="alert('正解です')">
+      <button type="button" onclick="alert('残念')">2. have been waiting</button>
+	  <button type="button" onclick="alert('残念')">3. have waited</button>
+	  <button type="button" onclick="alert('残念')">4.　will have waited</button></p>
+	  <br/>
+	  <br/>
+	 　<br/>
+	 問2　He asked me if I (____) abroad.　　　(日本大)<br/>
+　　　　　<p><input type="button" value="1. was" onclick="alert('残念')">
+      <button type="button" onclick="alert('残念')">2. were</button>
+	  <button type="button" onclick="alert('正解です')">3. had ever been</button>
+	  <button type="button" onclick="alert('残念')">4.　had gone</button></p>
+	 <br/>
+     <br/>
+	 『問1、解説』<br/>
+	 1)時をあらわす接続詞whenが現れました。この文は、whenから後ろを副詞節を表す文です。<br/>
+	 （whenは『～のとき』って訳せるのは副詞節と覚えてください！）<br/>
+	 訳し方は、whenの後ろから先に訳して、次に、whenより前を訳してみると綺麗に訳せます！！<br/>
+	 when以下から先に訳すと、『列車が到着したとき、私たちは約30分待ち続けていた。』になります！<br/>
+	 2）次に動詞の時制を見てみましょう!簡単に①大過去②過去③過去④未来です。<br/>
+	 3）大過去（過去完了進行形）を使うときは、whenより後ろの文と比較して、それよりも古い場合、大過去が使えます！
+	 4)このため1が正解
+	 <br/>
+     <br/>
+	 『問2、解説』
+	 1）if、は『～かどうか』か『もし～ならば』と訳しましょう。<br/>
+	 2）時制を考えてみましょう！文の前半で書かれている、彼が私に尋ねたときよりも、文の後半の外国に行ったことの有無の方が古い情報だと判断できます。<br/>
+	 3）このため、3が正解です。<br/>
+	 <br/>
+ 　　  <br/>
+ <br/>
+ <br/>
+  <div>2　過去から現在のことを表すのが、『現在完了形』と『現在完了進行形』<br/>
+  <img src="現在完了と現在完了進行形.png"　width="300px" height="400px"><br/>
+  <br/>
+　　『入試問題』<br/>
+問1 I (＿＿) for a present for my teather since last week　,　but I can't find one yet.　（関東大学院）<br/>
+      <p><input type="button" value="1. had been looking" onclick="alert('残念')">
+      <button type="button" onclick="alert('正解です')">2. have been looking</button>
+	  <button type="button" onclick="alert('残念')">3. am looking</button>
+	  <button type="button" onclick="alert('残念')">4.　was looking</button></p><br/>
+	問2　Simon (＿＿＿) 12 filims, and I think his latest is the best.　（慶應大）
+	<p><input type="button" value="1. made" onclick="alert('残念')">
+      <button type="button" onclick="alert('残念')">2. had made</button>
+	  <button type="button" onclick="alert('正解です')">3. has made</button>
+	  <button type="button" onclick="alert('残念')">4.　was making</button></p>
+　　<br/>
+　　<br/>
+　　
+   </div>
+   <br/>
+  
+     <div>3　未来のある時期にする予定を表すのが『未来完了形』『未来完了進行形』<br/>
+  <img src="未来.png"　width="300px" height="400px"><br/>
+　　　<br/>
+　　『入試問題』<br/>
+問1　Next Sunday he (____) in Kobe for three years.  （東北学院大）
+<p><input type="button" value="1. has stayed" onclick="alert('残念')">
+      <button type="button" onclick="alert('残念')">2. stays</button>
+	  <button type="button" onclick="alert('残念')">3. will stay</button>
+	  <button type="button" onclick="alert('正解です')">4.　will have stayed</button></p>
+　　<br/>
+問2　How long (___) here by the end of next year? （亜細亜大）
+<p><input type="button" value="1. will you work" onclick="alert('残念')">
+      <button type="button" onclick="alert('残念')">2. are you working</button>
+	  <button type="button" onclick="alert('残念')">3. you will have worked</button>
+	  <button type="button" onclick="alert('正解です')">4.　will you have been working</button></p>
+　　<br/>
+   </div>
+   <br/>
+
+	
+    <script charset="utf-8">
+      ca = new ClientApp()
+    </script>
+  </body>
+</html><br />
+		
 	</div>
 	
 	</body>
